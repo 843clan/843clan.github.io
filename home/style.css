@@ -1,0 +1,504 @@
+@charset "utf-8";
+/**
+ * Copyright (c) 2010 ClanTemplates.com
+ * Blue Chrome; a free template by Dstanley at ClanTemplates.com
+ * No part of this file may be redistributed without written permission
+ * Designed by Dstanley <diddz2005@hotmail.com>
+ * Coded by Arrow816 <costellos@costello-coding.com>
+ * http://www.clantemplates.com/pages/Legal
+ */
+ *{margin:0px;padding:0px;}
+ .clr{clear:both;}
+ 
+ html{
+	 height:100%;
+	 padding-bottom:1px;
+	 font-size:100%;
+ }
+ 
+ body{
+	 background-image:url(images/body_bg.jpg);
+	 background-repeat:repeat-x;
+	 background-color:#1a1a1a;
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:12px;
+ }
+ 
+a{color:#000;}
+a:hover{color:#2CC1E3;}
+ 
+ .container1{
+	 width:1005px;
+	 margin:20px auto 0px auto;
+ }
+ 
+ 	.top_bar_con{
+		width:1005px;
+		height:49px;
+		background-image:url(images/top_bar_bg.jpg);
+	}
+	
+		.top_nav{
+			width:727px;
+			height:49px;
+			float:left;
+			font-weight:bold;
+			font-size:12px;
+		}
+		
+			.top_nav ul{
+				list-style:none;
+			}
+			
+				.top_nav ul li{
+					list-style:none;
+					float:left;
+					height:49px;
+				}
+				
+					.top_nav ul li a{
+						font-weight:bold;
+						font-size:12px;
+						color:#FFF;
+						text-decoration:none;
+						line-height:49px;
+						text-align:center;
+						display:block;
+					}
+					
+					.top_nav ul li a:hover{
+						color:#000;
+					}
+				
+				.top_nav ul li.home-nav{
+					width:79px;
+					background-image:url(images/nav/home-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.home-nav:hover, .top_nav ul li.home-nav-on{
+					width:79px;
+					background-image:url(images/nav/home-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.home-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.aboutus-nav{
+					width:92px;
+					background-image:url(images/nav/aboutus-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.aboutus-nav:hover, .top_nav ul li.aboutus-nav-on{
+					width:92px;
+					background-image:url(images/nav/aboutus-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.aboutus-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.members-nav{
+					width:94px;
+					background-image:url(images/nav/members-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.members-nav:hover, .top_nav ul li.members-nav-on{
+					width:94px;
+					background-image:url(images/nav/members-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.members-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.matches-nav{
+					width:91px;
+					background-image:url(images/nav/matches-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.matches-nav:hover, .top_nav ul li.matches-nav-on{
+					width:91px;
+					background-image:url(images/nav/matches-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.matches-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.downloads-nav{
+					width:104px;
+					background-image:url(images/nav/downloads-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.downloads-nav:hover, .top_nav ul li.downloads-nav-on{
+					width:104px;
+					background-image:url(images/nav/downloads-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.downloads-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.forums-nav{
+					width:80px;
+					background-image:url(images/nav/forums-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.forums-nav:hover, .top_nav ul li.forums-nav-on{
+					width:80px;
+					background-image:url(images/nav/forums-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.forums-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.contactus-nav{
+					width:100px;
+					background-image:url(images/nav/contactus-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.contactus-nav:hover, .top_nav ul li.contactus-nav-on{
+					width:100px;
+					background-image:url(images/nav/contactus-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.contactus-nav-on a{
+					color:#000;
+				}
+				
+				.top_nav ul li.sponsors-nav{
+					width:85px;
+					background-image:url(images/nav/sponsors-nav.jpg);
+					background-position:top;
+				}
+				
+				.top_nav ul li.sponsors-nav:hover, .top_nav ul li.sponsors-nav-on{
+					width:85px;
+					background-image:url(images/nav/sponsors-nav.jpg);
+					background-position:bottom;
+				}
+				
+				.top_nav ul li.sponsors-nav-on a{
+					color:#000;
+				}
+				
+		.login_box{
+			width:278px;
+			height:49px;
+			float:right;
+		}
+		
+			.login-username{
+				width:94px;
+				height:13px;
+				background-image:url(images/login-username-bg.jpg);
+				background-repeat:no-repeat;
+				color:#000;
+				border:0px;
+				font-size:12px;
+				float:left;
+				margin-top:6px;
+				margin-left:17px;
+				padding:10px 0px 10px 10px;
+				
+			}
+			
+			.login-password{
+				width:80px;
+				height:13px;
+				background-image:url(images/login-password-bg.jpg);
+				background-repeat:no-repeat;
+				color:#000;
+				border:0px;
+				font-size:12px;
+				float:left;
+				margin-top:6px;
+				margin-left:7px;
+				padding:10px 0px 10px 25px;
+
+			}
+			
+			.login-go{
+				width:24px;
+				height:33px;
+				background-image:url(images/login-go-bg.jpg);
+				border:0px;
+				float:left;
+				margin-top:6px;
+				margin-left:7px;
+			}
+			
+		.banner_con{
+			width:1005px;
+			height:197px;
+		}
+		
+			.banner_con a{
+				border:0px;
+			}
+			
+			.banner_con img{
+				border:0px;
+			}
+			
+		.main_con{
+			background-color:#FFF;
+			width:1003px;
+			border-left:1px solid #464646;
+			border-right:1px solid #000;
+			padding-top:5px;
+		}
+		
+			.carousel{
+				width:989px;
+				height:87px;
+				margin-left:7px;
+				margin-bottom:10px;
+				background-image:url(images/sponsor_slider_bg.jpg);
+				
+			}
+		
+			.left_col{
+				width:268px;
+				float:left;
+				margin-left:7px;
+				padding-right:4px;
+			}
+			
+				.side_bar_box{
+					width:266px;
+					height:48px;
+					font-size:12px;
+					border-top:1px solid #9F9F9F;
+					margin-left:2px;
+				}
+				
+				
+					.side_bar_box_icon{
+						width:25px;
+						height:35px;
+						padding:5px 0px 0px 5px;
+						float:left;
+					}
+					
+					.side_bar_box_detail{
+						height:35px;
+						padding-top:5px;
+						width:180px;
+						float:left;
+						margin-left:5px;
+					}
+					
+					.side_bar_box_detail_2{
+						height:35px;
+						padding-top:5px;
+						width:230px;
+						float:left;
+						margin-left:5px;
+					}
+					
+					.side_bar_box_detail_title{
+						font-weight:bold;
+						color:#000;
+						display:block;
+					}
+					
+					.side_bar_box_detail_date{
+						color:#726E6E;
+						display:block;
+						font-size:11px;
+					}
+					
+					.side_bar_box_detail_date2{
+						color:#726E6E;
+						float:left;
+						font-size:11px;
+					}
+					
+						.side_bar_box_detail_date2 a{
+							color:#726E6E;
+							text-decoration:none;
+						}
+						
+						.side_bar_box_detail_date2 a:hover{
+							color:#000;
+						}
+							
+					
+					.side_bar_box_action-win{
+						float:right;
+						height:35px;
+						line-height:35px;
+						padding-right:10px;
+						font-weight:bold;
+						color:#488C06;
+						font-size:14px;
+					}
+					
+					.side_bar_box_action-loss{
+						float:right;
+						height:35px;
+						line-height:35px;
+						padding-right:10px;
+						font-weight:bold;
+						color:#FE0000;
+						font-size:14px;
+					}
+					
+					.side_bar_box_action-tie, .side_bar_box_action{
+						float:right;
+						height:35px;
+						line-height:35px;
+						padding-right:10px;
+						font-weight:bold;
+						color:#000;
+						font-size:14px;
+					}
+					
+					.side_bar_box_action a{
+						color:#000;
+						text-decoration:none;
+					}
+						
+					.side_bar_box_action a:hover{
+						color:#2CC1E3;
+						text-decoration:none;
+					}
+					
+				.side_roster_box{
+					width:266px;
+					height:185px;
+					margin-left:2px;
+					border-top:1px solid #9F9F9F;
+				}
+				
+					.side_roster_box_row {
+						width:266px;
+						height:85px;
+						float:left;
+						margin-top:5px;
+					}
+					
+						.side_roster_box_row img{
+							border:0px;
+						}
+					
+						
+					
+
+			.center_col{
+				width:440px;
+				border-width:0px 1px 0px 1px;
+				border-style:solid;
+				border-color:#000;
+				padding:0px 2px 0px 2px;
+				float:left;
+			}
+			
+				.main_news{
+					margin:0 auto;
+				}
+			
+					.main_news_header{
+						width:439px;
+						height:43px;
+						background-image:url(images/center_col_header.jpg);
+						
+					}
+					
+						.main_news_header span{
+							line-height:43px;
+						}
+					
+						.main_news_header .main_news_title{
+							color:#FFF;
+							font-weight:bold;
+							margin-left:15px;
+						}
+						
+						.main_news_header .main_news_date{
+							color:#6DD3EB;
+							font-weight:bold;
+						}
+						
+						.main_news_date a{
+							color:#6DD3EB;
+							font-weight:bold;
+							text-decoration:none;
+						}
+						
+						.main_news_date a:hover{
+							color:#FFF;
+						}
+						
+						
+						
+					.main_news_content{
+						width:433px;
+						margin:0 auto;
+					}
+						
+						.main_news_content p{
+							padding-top:5px;
+							padding-bottom:10px;
+						}
+						
+						.main_news_content ul{
+							margin-left:20px;
+							margin-bottom:5px;
+						}
+						
+			
+			.right_col{
+				width:268px;
+				padding-left:4px;
+				float:left;
+			}
+			
+				.side_bar_header{
+					background-image:url(images/side_bar_header.jpg);
+					height:40px;
+					width:266px;
+					margin-left:2px;
+				}
+				
+					.side_bar_header span{
+						color:#FFF;
+						font-weight:bold;
+						font-size:12px;
+						line-height:40px;
+						margin-left:25px;
+					}
+					
+					.team_clip_box{
+						width:266px;
+						height:182px;
+						margin-top:10px;
+						margin-left:2px;
+						margin-bottom:10px;
+					}
+					
+			.footer_con{
+				background-image:url(images/footer_con_bg.jpg);
+				background-repeat:no-repeat;
+				width:989px;
+				height:75px;
+				padding-bottom:5px;
+				margin:10px auto 0px auto;
+			}

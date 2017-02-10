@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+ * Copyright (c) 2010 ClanTemplates.com
+ * Blue Chrome; a free template by Dstanley at ClanTemplates.com
+ * No part of this file may be redistributed without written permission
+ * Designed by Dstanley <diddz2005@hotmail.com>
+ * Coded by Arrow816 <costellos@costello-coding.com>
+ * http://www.clantemplates.com/pages/Legal
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blue Chrome - Home</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.2/full/jquery.tools.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="scrollable-horizontal.css" />
+	<link rel="stylesheet" type="text/css" href="scrollable-buttons.css" />
+</head>
+<body>
+<div class="container1">
+	<div class="top_bar_con">
+    	<div class="top_nav">
+        	<ul>
+            	<li class="home-nav-on"><a href="#">Home</a></li>
+                <li class="aboutus-nav"><a href="#">About Us</a></li>
+                <li class="members-nav"><a href="#">Members</a></li>
+                <li class="matches-nav"><a href="#">Matches</a></li>
+                <li class="downloads-nav"><a href="#">Downloads</a></li>
+                <li class="forums-nav"><a href="#">Forum</a></li>
+                <li class="contactus-nav"><a href="#">Contact Us</a></li>
+                <li class="sponsors-nav"><a href="#">Sponsors</a></li>
+        	</ul>
+        </div>
+        <div class="login_box">
+        	<form action="#" method="post">
+            	<input type="text" value="Username" name="username" class="login-username" tabindex="1"/>
+                <input type="password" value="Password" name="password"  class="login-password" tabindex="2" />
+                <input type="submit" value="" class="login-go" tabindex="3" />
+            </form>
+        </div>
+    </div>
+    <div class="banner_con">
+    	<a href="#"><img src="images/banner.jpg" alt="Blue Chrome Banner"  /></a>
+    </div>
+    <div class="main_con">
+    	<div class="carousel">
+        	<!-- "previous page" action -->
+                <a class="prev browse left"></a>
+                <!-- root element for scrollable -->
+                <div class="scrollable">   
+                   <!-- root element for the items -->
+                   <div class="items">
+                      <!-- 1-5 -->
+                      <div>
+                      	<a href="http://www.ati.com" target="_blank">
+                        	<img src="images/sponsors/ati.png" alt="ATI" title="ATI" />
+                        </a>
+                        <a href="http://www.clantemplates.com" target="_blank">
+                        	<img src="images/sponsors/ct.png" alt="Clan Templates" title="ClanTemplates" />
+                        </a>
+                        <a href="http://www.dell.com" target="_blank">
+                        	<img src="images/sponsors/dell.png" alt="Dell" title="Dell" />
+                        </a>
+                        <a href="http://www.linemax.de/" target="_blank">
+                        	<img src="images/sponsors/linemax.png" alt="Linemax" title="Linemax" />
+                        </a>
+                        <a href="#">
+                        	<img src="images/sponsors/webtek.png" alt="WebTek" title="WebTek" />
+                        </a>
+                      </div>
+                      <!-- 5-10 -->
+                      <div>
+                      	<a href="#">
+                        	<img src="images/sponsors/webtek.png" alt="WebTek" title="WebTek" />
+                        </a>
+                        <a href="http://www.linemax.de/" target="_blank">
+                        	<img src="images/sponsors/linemax.png" alt="Linemax" title="Linemax" />
+                        </a>
+                        <a href="http://www.dell.com" target="_blank">
+                        	<img src="images/sponsors/dell.png" alt="Dell" title="Dell" />
+                        </a>
+                        <a href="http://www.clantemplates.com" target="_blank">
+                        	<img src="images/sponsors/ct.png" alt="Clan Templates" title="ClanTemplates" />
+                        </a>
+                        <a href="http://www.ati.com" target="_blank">
+                        	<img src="images/sponsors/ati.png" alt="ATI" title="ATI" />
+                        </a>
+                      </div>
+                   </div>
+                </div>
+                <!-- "next page" action -->
+                <a class="next browse right"></a>
+                
+                
+                <!-- javascript coding -->
+                <script type="text/javascript">	
+                
+                // custom easing called "custom"
+                $.easing.custom = function (x, t, b, c, d) {
+                    var s = 1.70158; 
+                    if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+                    return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+                }
+                // use the custom easing
+                $("div.scrollable").scrollable({easing: 'custom', speed: 700, circular: true})
+				.autoscroll({
+					interval: 5000		
+				});;
+                </script>
+        </div>
+        <div class="left_col">
+<div class="side_bar_header">
+            	<span>Team Roster</span>
+            </div>
+            <div class="side_roster_box">
+            	<div class="side_roster_box_row">
+                	<a href="#"><img src="images/avatar.jpg" alt="Team Member 1" /></a>
+                    <a href="#"><img src="images/avatar.jpg" alt="Team Member 2" /></a>
+                    <a href="#"><img src="images/avatar.jpg" alt="Team Member 3" /></a>
+                </div>
+                <div class="side_roster_box_row">
+                	<a href="#"><img src="images/avatar.jpg" alt="Team Member 4" /></a>
+                    <a href="#"><img src="images/avatar.jpg" alt="Team Member 5" /></a>
+                    <a href="#"><img src="images/avatar.jpg" alt="Team Member 6" /></a>
+                </div>
+            </div>
+            <div class="side_bar_header">
+            	<span>Latest Matches</span>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action-win">
+                	10 - 5
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action-loss">
+                	3 - 10
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action-tie">
+                	2 - 2
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action-win">
+                	10 - 5
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_header">
+            	<span>Recent Forum Threads</span>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action">
+                	<a href="#">view</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action">
+                	<a href="#">view</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action">
+                	<a href="#">view</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="side_bar_box_action">
+                	<a href="#">view</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="center_col">
+        	<div class="main_news">
+                <div class="main_news_header">
+                    <span class="main_news_title">Introduction |</span>
+                    <span class="main_news_date">Posed By: <a href="#">Dstanley</a></span>
+                </div>
+                <div class="main_news_content">
+                	<p>Thank you for downloading this free template release from <a href="http://www.clantemplates.com/" title="Free Clan Gaming Templates" target="_blank">ClanTemplates</a> if you have any questions, these paragraphs should address them or point you to where they can be addressed.</p>
+
+<p>There are a few terms-of-use rules you need to follow if you want to use this or any ClanTemplates template but they are simple to follow. The first is that you <strong>must</strong> keep a link back to ClanTemplates either using a Lead Sponsor image or an affiliate link (depending on your template). This must be a hyperlink and must include the ClanTemplates 'C' logo. The second is that you <strong>must</strong> include any copyright footer in the template that tells you who designed and coded the template. This image (and/or text) should also link to ClanTemplates and must not be edited.</p>
+
+<p>If you wish to add your own sponsors you are permitted to remove the designer and coder sponsors.</p>
+                </div>
+                <div class="main_news_header">
+                    <span class="main_news_title">Editing your template |</span>
+                    <span class="main_news_date">Posed By: <a href="#">Dstanley</a></span>
+                </div>
+                <div class="main_news_content">
+                	<p>All templates released at Clantemplates are coded in <acronym title="HyperText Markup Language">html</acronym>/<acronym title="eXtensible HyperText Markup Language">xhtml</acronym> &amp; <acronym title="Cascading StyleSheets">css</acronym> so that even the most inexperienced individual can understand and edit the template. If you have either Frontpage or Dreamweaver at your disposal these would be recommended for you to easily edit and manage the code of your new website template. Below are 3 video tutorials that explain different aspects of how to use a template downloaded from Clantemplates.</p>
+
+					<ul>
+						<li><a href="http://www.clantemplates.com/video/How_to_DL_and_Edit/How_to_DL_and_Edit.html" title="Video tutorial on editing your template" target="_blank">How to Download &amp; Edit Your Template</a></li>
+						<li><a href="http://www.clantemplates.com/video/CT_How_to_Make_a_New_Page/CT_How_to_Make_a_New_Page.html" title="Video tutorial on editing your template" target="_blank">How to make a new page for the template</a></li>
+						<li><a href="http://www.clantemplates.com/video/CT_How_to_Upload/CT_How_to_Upload.html" title="Video tutorial on editing your template" target="_blank">How to upload your template to a server</a></li>
+					</ul>
+
+					<p>All templates released at Clantemplates should include blank banner images for you to add your own clan's name to in order to personalize the template. Such images are generally included in the images folder which was in the zip file you downloaded and are normally denoted by the word <kbd>blank</kbd> in the filename. They may also be in a seperate folder called <kbd>blank</kbd>. Other blank images for various parts of a template, may be included in the folder, depending on the template you've downloaded. If there are no suitable blank images please ask in the <a href="http://forums.clantemplates.com/forumdisplay.php?f=9" title="Help Booth" target="_blank">Help Booth</a>.</p>
+                </div>
+                <div class="main_news_header">
+                    <span class="main_news_title">Troubleshooting |</span>
+                    <span class="main_news_date">Posed By: <a href="#">Dstanley</a></span>
+                </div>
+                <div class="main_news_content">
+                <p>Here are some common errors taken when uploading your template:</p>
+
+				<h3>It's all messed up - no images or colours are shown!</h3>
+					<p>Make sure you upload EVERYTHING in your download folder. This includes the images and any .css or .js files.</p>
+
+				<h3>None of the images are shown!</h3>
+					<p>Have you uploaded all your images in the "images" folder they were in? Don't rename the folder, and make sure all images are in that folder exactly as they are on your PC.</p>
+                </div>
+                <div class="main_news_header">
+                    <span class="main_news_title">Getting Help |</span>
+                    <span class="main_news_date">Posed By: <a href="#">Dstanley</a></span>
+                </div>
+                <div class="main_news_content">
+                <p>Any questions that the video tutorials just didn't cover? Well the best place to get the kind of answers you need is to use that template you've downloaded is to submit your question for the Support Staff in the Clantemplates <a href="http://forums.clantemplates.com/forumdisplay.php?f=9" title="Help Booth" target="_blank">Help Booth</a>. Make sure you include the <em>name</em> of the template you downloaded and the <em>category (game)</em> it was in. If things aren't displaying correctly include the <em>name of the web browser</em> you're using (e.g. Internet Explorer 8, Firefox 3). Any question you may have regarding a template they will be able to answer for you.</p>
+                </div>
+        	</div>
+        </div>
+        <div class="right_col">
+        	<div class="side_bar_header">
+            	<span>Team Clip</span>
+            </div>
+            <div class="team_clip_box">
+            	<img src="images/team_clip_bg.jpg" alt="team_clip" class="team_clip"/>
+            </div>
+            <div class="side_bar_header">
+            	<span>Upcoming Matches</span>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_sc.jpg" alt="sc_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date">Date: 25th  Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_header">
+            	<span>Team News</span>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_mic.jpg" alt="mic_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date2">Posted By <a href="#">David Stanley</a> on: 25th Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_mic.jpg" alt="mic_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date2">Posted By <a href="#">David Stanley</a> on: 25th Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_mic.jpg" alt="mic_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date2">Posted By <a href="#">David Stanley</a> on: 25th Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="side_bar_box">
+            	<div class="side_bar_box_icon">
+                	<img src="images/icon_small_mic.jpg" alt="mic_small" />
+                </div>
+                <div class="side_bar_box_detail_2">
+                	<span class="side_bar_box_detail_title">Team Name vs. Opponent</span>
+                    <span class="side_bar_box_detail_date2">Posted By <a href="#">David Stanley</a> on: 25th Apr 2010</span>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <div class="footer_con"></div>
+    </div> 
+</div>
+</body>
+</html>
